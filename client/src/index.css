@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body{
+ 
+  font-family: Fira Code, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eee;
+}
+
+.Main {
+  margin: 1rem;
+  padding: 0px;
+  width: 60%;
+  height: 100%;
+}
+
+.Main h1{
+  color: #444;
+  text-align: center;
+
+}
+
+.book-list{
+  list-style: none;
+  margin-top: 2rem;
+  font-size: 2rem;
+  
+}
+.book-list li{
+  display: inline-block;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #880E4F;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+  cursor: pointer;
+  color: #880E4F;
+
+}
+
+.book-detail{
+  margin-top: 2rem;
+}
+
+.add-book{
+  margin-top: 3rem;
+}
+
+form{
+ background: #fff;
+ padding: 20px; 
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 400px;
+}
+
+form .field{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  box-sizing: border-box
+}
+
+form label{
+  text-align: right;
+  padding: 10px;
+}
+
+form select, form input{
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+
+
+form button{
+  color: white;
+  font-size: 2em;
+  background: #Ad1457;
+  border: 0;
+  padding: 6px  15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.book-details{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #Ad1457;
+  padding: 30px;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  color: #eee;
+}
+
+.book-details p{
+  margin-top: .5rem;
+}
+.book-details li{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}

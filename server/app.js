@@ -3,12 +3,15 @@ const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // connect to mlab database
 mongoose.connect('mongodb+srv://trew13690:loveMai@cluster0-gytjt.gcp.mongodb.net/test?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {
     console.log('Connected to Database')
 })
+
+app.use(cors());
 app.use('/graphql',graphqlHTTP({
     schema,
     graphiql:true
